@@ -11,10 +11,20 @@ function calculateIMC() {
     displayResult(imc);
 }
 
+let meuCabecalho = document.querySelector('h1');
+let meuNome = prompt('Por favor, digite seu nome.');
+
+localStorage.setItem('nome', meuNome);
+meuCabecalho.textContent = 'Vamos calcular o seu IMC, ' + meuNome;
+
+
+
+
+
 function displayResult(imc) {
     let resultText = '';
     if (imc < 18.5) {
-        resultText = 'Abaixo do peso. ';
+        resultText = 'Abaixo do peso.';
     } else if (imc < 24.9) {
         resultText = 'Peso normal.';
     } else if (imc < 29.9) {
@@ -27,5 +37,6 @@ function displayResult(imc) {
         resultText = 'Obesidade grau 3.';
     }
 
-    document.getElementById('result').textContent = `Seu IMC é ${imc.toFixed(2)}. ${resultText}`;
+    document.getElementById('result').textContent = `${meuNome}, seu IMC é ${imc.toFixed(2)}. ${resultText}`;
+
 }
