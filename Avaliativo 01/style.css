@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-size: cover;
+    background-image: url(https://images.hdqwalls.com/download/colorful-lines-abstract-al-1920x1080.jpg);
+}
+
+.content {
+    border: 2px solid rgb(184, 19, 19);
+    padding: 30px;
+    margin: 50vh;
+    margin-top: 22vh;
+    background-color: #dfcfcf;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label,
+input {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #cf4d25;
+}
+
+#result {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    background-color: #af9e9e;
+
+    transition: 0.2s;
+}
+
+#result:hover {
+    background-color: #e6b9b9;
+}
